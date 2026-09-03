@@ -27,7 +27,7 @@ resource "aws_instance" "eks-manager" {
 
 }
 resource "aws_iam_instance_profile" "test_profile" {
-  name = "eks-role"
+  name = "eks-role-new"
   role = aws_iam_role.instance.name
 }
 
