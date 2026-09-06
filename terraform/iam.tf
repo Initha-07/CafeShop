@@ -33,3 +33,8 @@ resource "aws_iam_role_policy_attachment" "vpc_full_access" {
   role       = aws_iam_role.instance.name
   policy_arn = "arn:aws:iam::aws:policy/AmazonVPCFullAccess"
 }
+
+resource "aws_iam_role_policy_attachment" "vpc_full_access" {
+  role       = aws_iam_role.instance.name
+  policy_arn = "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
+}
